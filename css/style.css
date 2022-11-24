@@ -1,0 +1,336 @@
+.time_trackerheading{
+    text-align: center;
+}
+.main_logincontainer{
+    padding-left: 151px;
+    padding-right: 151px;
+}
+.login_btn{
+    width: 100%;
+    margin-top: 19px;
+    background-color:#3ba4eb;
+    border:none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+.login_btn:hover{
+    background-color:#3ba4eb;
+}
+.welcome_heading{
+    color:#3ba4eb;
+}
+
+.all_textcolor{
+    color:#a7a8aa
+}
+.heading_color{
+    font-size: 18px;
+    font-weight: 600;
+}
+.textarea_login{
+    background: #e8ecf3;
+    color: black;
+    padding: 15px;
+}
+.user_profile span{
+    margin-right: 9px;
+    color: #808081;
+    font-size: 31px;
+    font-weight: 400;
+}
+.user_profile img{
+    width: 30%;
+}
+
+.user_profilechat{
+    text-align: right;
+}
+
+.user_profilechat span{
+    margin-right: 9px;
+    color: #808081;
+    font-size: 31px;
+    font-weight: 400;
+}
+.user_profilechat img{
+   width: 5%;
+}
+.task_publicross{
+    list-style-type: none;
+    display: flex;
+    padding-left: 0px;
+    width: 96%;
+    margin-left: 9px;
+    background: #6fbaed;
+    color: #fff;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 3px;
+}
+.task_firstlidata{
+    padding-left: 9px;
+}
+.task_secondlidata{
+    padding-right: 14px;
+    width: 18%;
+    text-align: right;
+}
+.select_statusbtn{
+    text-align: right;
+    margin-top: 15px;
+}
+.task_timedetail span{
+   margin-right: 26px;
+}
+
+.task_textfont{
+    font-size: 25px;
+}
+.taskbody{
+  background-color: #edeef2;
+}
+.task_heading{
+    color: #808081;
+    font-size: 31px;
+    font-weight: 400;
+}
+.play_buttonlarge{
+    position: absolute;
+    right: 9px;
+    top: -25px;
+    cursor: pointer;
+}
+.pause_buttonlarge{
+    position: absolute;
+    right: 9px;
+    top: -25px;
+    cursor: pointer;
+    display: none;
+}
+.timmer_new{
+    margin-right: 76px;
+}
+
+.timmer_task_heading{
+    color: #808081;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.task_heading2{
+    color: #808081;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.white_sectionmargin{
+    margin-left: -4px;
+    margin-right: 0px;
+}
+
+.task_newsection{
+     padding-top: 14px;
+    padding-bottom: 14px;
+}
+.pending_data{
+    background-color: #62b6ef;
+    color:#fff;
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-right: 9px;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    border-radius: 4px;
+}
+
+.ending_data{
+    background-color: #ef6262;
+    color:#fff;
+    padding-bottom: 3px;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.inprogress_data{
+    background-color: #efb762;
+    color:#fff;
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-right: 9px;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    border-radius: 4px; 
+}
+
+.complete_data{
+    background-color: #52ce89;
+    color:#fff;
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-right: 9px;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    border-radius: 4px; 
+}
+.task_namenew{
+    background-color: #edeef2;
+    width: fit-content;
+    color:#94969b;
+    padding-left: 9px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 5px;
+    padding-right: 9px;
+}
+.play_buttoncolor{
+    color:#27c26c;
+}
+.pause_buttoncolor{
+    color:grey;
+}
+.chat_color{
+    color:#43cbec
+}
+.pause_color{
+    color: #a7a8aa;
+}
+.view_detailbtn{
+    background-color:#edeef2;
+    color: #808081;
+    border:none;
+}
+.complete_task{
+    background-color:#6fbaed;
+    color: #fff;
+    border:none;
+}
+.submit_forapproval{
+    background-color:#52ce89;
+    color: #fff;
+    border:none;
+}
+.task_newstatusdata{
+    margin: 0px;
+    box-shadow: 1px 1px 6px 1px gainsboro;
+    padding: 14px;
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-top: 14px;
+    margin-left: 13px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+.leftsidebar{
+    width: 12%;
+    float: left;
+    padding-top: 260px;
+    padding-bottom: 260px;
+    background-color: #575757;
+}
+.leftsidebar i{
+    color:#fff;
+}
+.rightcontent{
+    float: right;
+    width: 87%;
+}
+.left_sidebarcontent{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.left_sidebaricon{
+    text-align: center;
+    color: #fff;
+}
+.first_lefticons,.second_lefticons{
+    margin-bottom: 40px;
+}
+.password_content{
+    color: #fff;
+    font-size: 23px;
+}
+.star_hrdata{
+   background-color: #fff;
+    width: 21%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.submit_forapprovaltext{
+    color: #808081;
+}
+.submit_approvaltextarea{
+    background-color: #f0f1f3;
+}
+.new_detailcontent{
+    background-color:#edeef2;
+}
+.detail_body_content{
+    background-color: #fff;
+    color: #808081;
+    border-top: 1px solid #aeaeb1;
+    border-bottom: 1px solid #aeaeb1;
+}
+.chat_timenew{
+    text-align: right;
+    margin-bottom: 0px;
+    font-size: 11px;
+}
+.white_chattext{
+ margin-bottom: 0px;
+}
+.white_chatmessage{
+    background: #fff;
+    margin-left: 11px;
+    border-radius: 9px;
+    padding: 12px;
+}
+.green_chatmessage{
+    background: #31ba99;
+    border-radius: 9px;
+    padding: 12px;
+    margin: 0px 9px 0px auto;
+    color: #fff;
+}
+.paper_aeroplan{
+    color: #31ba99;
+}
+.write_message{
+    padding-top: 19px;
+    padding-bottom: 19px;
+    border: 0px;
+}
+.aeroplandata .basic_newdata{
+    background-color: #fff;
+    border: 0px;
+}
+.attachment_ul{
+    list-style-type: none;
+    display: flex;
+    padding-left: 0px;
+}
+.attachment_ul i{
+    color:#10b1d8;
+}
+.attachment_data{
+    margin-left: 10px;
+    margin-top: 6px;
+    font-weight: 500;
+}
+.attachment_data_size{
+    font-weight: 100;
+     font-size: 11px;
+}
+.third_lefticons:hover,.second_lefticons:hover,.first_lefticons:hover{
+  cursor:pointer;
+}
+.select_statusnew{
+    width: 12%;
+    margin: 0px 0px 0px auto;
+    background: #858c94;
+    color: #fff;
+    margin-top: 18px;
+    border-radius: 7px;
+    height: 41px;
+}

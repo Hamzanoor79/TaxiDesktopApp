@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <title>Taxi App</title>
+  </head>
+  <body class="taskbody">
+     <div class="container-fluid">
+    
+    <div class="leftsidebar">
+        
+        <div class="first_lefticons">
+            <p class="left_sidebarcontent"><i class="fa fa-2x fa-home" aria-hidden="true"></i></p>
+            <p class="left_sidebaricon">Home</p>
+        </div>
+
+         
+        <div class="second_lefticons">
+            <p class="left_sidebarcontent password_content">***</p>
+            <hr class="star_hrdata">
+            <p class="left_sidebaricon">Password</p>
+        </div>
+
+         
+        <div class="third_lefticons logout">
+            <p class="left_sidebarcontent"><i class="fa fa-2x fa-sign-out" aria-hidden="true"></i></p>
+            <p class="left_sidebaricon">Logout</p>
+        </div>
+
+    </div>
+
+    <div class="rightcontent">
+
+        <div class="row mt-3">
+               <div class="col-sm-9">
+                 <p class="task_heading">Hi! To start working, Click on a task <span><i class="fa fa-arrow-down" aria-hidden="true"></i>
+                  </span></p>  
+               </div>
+               <div class="col-sm-3 user_profile">
+                   <span class="data_name">Lucas</span><img src="image/userimg.png">
+               </div>   
+        </div>
+
+        <div class="row mt-4">
+           <div class="col-sm-12">
+
+               <ul class="task_publicross">
+                   <li class="task_firstlidata">
+                       In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of document.
+                   </li>
+                   <li class="task_secondlidata">
+                      <span><i class="fa fa-times" aria-hidden="true"></i></span>
+                   </li>
+               </ul>
+            
+           </div>
+        </div>
+
+
+        <div class="row bg-white white_sectionmargin mt-4">
+
+            <div class="col-sm-9">
+               <h4 class="task_heading2">Working Hours</h4>
+            </div>
+
+            <div class="col-sm-3 text-right">
+                <span class="timmer_new task_heading2" id="countdown">0</span>
+                <!-- <span class="timmer_new task_heading2" id="countdown">00:00:00</span> -->
+                <span class="play_buttonlarge play_buttoncolor" id="play_buttonlarge"><i class="fa fa-5x fa-play-circle" aria-hidden="true"></i></span>
+                <span class="pause_buttonlarge pause_buttoncolor" id="pause_buttonlarge"><i class="fa fa-5x fa-pause-circle" aria-hidden="true"></i></span>
+             <!-- <div id= "countdown"></div> -->
+            </div>
+
+        </div>
+
+         <div class="row">
+             <div class="col-sm-12">
+               <div class="form-group">
+                  <!-- <label>Select Status</label> -->
+                  <select class="form-control select_statusnew" name="select_statusnew">
+                  <option value="Complete">Complete</option>
+                  <option value="Pending">Pending</option>
+                  <option value="Inprogress">Inprogress</option>
+                  <option value="Inreview">Inreview</option>
+                  </select>
+                </div>
+                  <!-- <div class="dropdown select_statusbtn">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Select Status 
+                        </button>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+
+                 </div> -->
+             </div>
+         </div>
+   
+      
+      <section class="bg-white white_sectionmargin mt-2 task_newsection">
+
+         <div class="row m-0">
+             
+             <div class="col-sm-12">
+                 <h4 class="task_heading">Worked Today:</h4>
+             </div>
+         </div>
+
+         <!-- <div class="row task_newstatusdata">
+              
+                <div class="col-sm-5">
+                    <p class="timmer_task_heading task_namenew">Developer Version Html, Css</p>
+                    <span class="pending_data">Pending</span><span class="ending_data">Ending Date:01/11/2022</span>
+                </div>
+
+                <div class="col-sm-7 task_timedetail">
+                    <span class="timmer_task_heading">00:41:26</span>
+                    <span class="play_buttoncolor"><i class="fa fa-2x fa-play-circle" aria-hidden="true"></i></span>
+                    <span><a href="chat.html" class="chat_color"><i class="fa fa-2x fa-comment" aria-hidden="true"></i></a></span>
+                    <span><button type="button" class="btn btn-primary view_detailbtn" data-toggle="modal" data-target="#exampleModal1">View Details</button></span>
+                    <span><button type="button" class="btn btn-primary complete_task">Mark as Complete</button></span>
+                </div>
+         </div> -->
+<!-- 
+         <div class="row task_newstatusdata">
+              
+                <div class="col-sm-5">
+                    <p class="timmer_task_heading task_namenew">Developer Version Html, Css</p>
+                    <span class="inprogress_data">In progress</span><span class="ending_data">Ending Date:01/11/2022</span>
+                </div>
+
+                <div class="col-sm-7 task_timedetail">
+                    <span class="timmer_task_heading">00:41:26</span>
+                    <span class="pause_color"><i class="fa fa-2x fa-pause-circle" aria-hidden="true"></i></span>
+                    <span><a href="chat.html" class="chat_color"><i class="fa fa-2x fa-comment" aria-hidden="true"></i></a></span>
+                    <span><button type="button" class="btn btn-primary view_detailbtn" data-toggle="modal" data-target="#exampleModal1">View Details</button></span>
+                    <span><button type="button" class="btn btn-primary submit_forapproval" data-toggle="modal" data-target="#exampleModal">Submit for Approval</button></span>
+                </div>
+         </div> -->
+<!--        
+         <div class="row task_newstatusdata">
+              
+                <div class="col-sm-5">
+                    <p class="timmer_task_heading task_namenew">Developer Version Html, Css</p>
+                    <span class="complete_data">Complete</span><span class="ending_data">Ending Date:01/11/2022</span>
+                </div>
+
+                <div class="col-sm-7 task_timedetail">
+                    <span class="timmer_task_heading">00:41:26</span>
+                    <span class="pause_color"><i class="fa fa-2x fa-pause-circle" aria-hidden="true"></i></span>
+                    <span><a href="chat.html" class="chat_color"><i class="fa fa-2x fa-comment" aria-hidden="true"></i></a></span>
+                    <span><button type="button" class="btn btn-primary view_detailbtn" data-toggle="modal" data-target="#exampleModal1">View Details</button></span>
+                </div>
+         </div> -->
+          <div class="display_tasks">
+
+          </div>
+
+      </section>
+
+     </div>
+
+  </div>
+  
+  
+      <script src="js/jquery.min.js"></script>
+       <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> --> 
+       <script src="js/bootstrap.min.js"></script>
+        <script src="js/render.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		    $('.data_name').html(localStorage.getItem('f_name'));
+         
+            var formData = new FormData();
+            $userid=localStorage.getItem('u_id');
+            formData.append('userid',$userid);
+
+              $.ajax({
+       // url: "https://book2say.com/timetracker/Authentication/usertasks", 
+	    url:'http://taxiapp.sysbitechies.com/Authentication/usertasks',
+        type: 'POST',
+        contentType:false,
+		    data: formData,
+        processData:false,
+        cache: false,
+        dataType: "json",
+        success: function (reponse) { 
+		     //ele.html('Login');
+     	  if(reponse.status){
+		   	// console.log(reponse.near_data.Id);
+			   //localStorage.clear();
+     		var userdetail=reponse.data;
+			  // console.log(userdetail);
+     		//console.log(reponse.data);
+            var content_html='';
+            var statusbtn='';
+            var j=1; 
+             if(userdetail.length > 0){
+                 for(var i=0;i<userdetail.length;i++)
+                 {
+                //  if(reponse.near_data.Id==userdetail[i].Id){
+                          //      var redclass="red_row";
+                //  }else{
+                          //     var redclass="";
+                //  }
+                 var viewthread='';
+                  
+                  // if(userdetail[i].status_id==5){
+                  //   viewthread='<button type="button" class="btn btn-primary modal_newbtn chat_showdata" data-toggle="modal" data-id="'+userdetail[i].Id+'"  data-target="#exampleModal1">View Thread</button>';
+                  // }else{
+                  //   viewthread='';
+                  // }
+
+                  //checking status
+                  if(userdetail[i].status_id!=5){
+                      statusbtn='<button type="button" class="btn btn-primary complete_task complete_taskdata" data-task='+userdetail[i].Id+' id="mark_'+userdetail[i].Id+'">Mark as Complete</button>';     
+                  }else{
+                      statusbtn='<button type="button" class="btn btn-primary submit_forapproval send" data-task='+userdetail[i].Id+' data-toggle="modal" data-target="#exampleModal2">Submit for Proposal</button>';
+                  }
+
+                var redclass="";
+                           content_html+='<div class="row task_newstatusdata"><div class="col-sm-5"><p class="timmer_task_heading task_namenew">'+userdetail[i].Task+'</p><span class="pending_data">'+userdetail[i].status+'</span><span class="ending_data">Ending Date: '+userdetail[i].end_date+'</span></div><div class="col-sm-7 task_timedetail"><span class="timmer_task_heading">00:41:26</span><span class="play_buttoncolor"><i class="fa fa-2x fa-play-circle" aria-hidden="true"></i></span><span><a href="javascript:void(0)" data-id='+userdetail[i].Id+' class="chat_color"><i class="fa fa-2x fa-comment" aria-hidden="true"></i></a></span><span><button type="button" class="btn btn-primary view_detailbtn" data-id='+userdetail[i].Id+' data-detail='+userdetail[i].task_detail+' data-toggle="modal" data-target="#exampleModal1">View Details</button></span><span>'+statusbtn+'</span></div></div>';
+                          //content_html+='<tr class="'+redclass+'"><td>'+j+'</td><td>'+userdetail[i].Task+'</td><td>'+userdetail[i].end_date+'</td><td><button type="button" class="btn btn-primary modal_newbtn" id="modaltext_'+userdetail[i].Id+'" data-id="'+userdetail[i].Id+'" data-toggle="modal" data-target="#exampleModal">'+userdetail[i].status+'</button>'+viewthread+'</td></tr>';
+                      j++;
+				
+				        }    
+                $('.display_tasks').prepend(content_html);
+
+             }
+
+
+     	}else{
+     		alert(reponse.message);
+     	}
+       
+        } 
+ 
+      });
+
+
+       $(document).on('click','.view_detailbtn',(function(e){
+           var id=$(this).attr('data-id');
+           var detail=$(this).attr('data-detail');
+           $('.detail_body_content_new').attr('id','change_'+id);
+           $('#change_'+id).html(detail);
+          
+      }));
+
+      $(document).on('click','.send',(function(e){
+           var id=$(this).attr('data-task');
+           $('.upload_data').attr('data-id',id);
+           $('.upload_data').attr('id','submitmsg_'+id);
+           $('.upload_file').attr('id','uplodefile_'+id);
+           $('.submit_approvaltextarea').attr('id','messagedata_'+id);
+      }));
+
+  });
+  </script>
+
+
+    <!------------model submit for approval---->
+
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title submit_forapprovaltext" id="exampleModalLabel">Submit for Approval</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          
+          <div class="form-group">
+            <textarea class="form-control submit_approvaltextarea" rows="6" placeholder="In publishing and graphic design"></textarea>
+          </div>
+
+          <div class="form-group">
+             <input type="file" name="upload_file[]" class="form-control upload_file" multiple>
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success upload_data">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content new_detailcontent">
+      <div class="modal-header">
+        <h5 class="modal-title submit_forapprovaltext" id="exampleModalLabel">Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body detail_body_content">
+        <p class="detail_body_content_new"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Okay</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!----------end model submit for approval-->
+  </body>
+    
+       <!-- <script src="js/popper.min.js"></script>  -->
+</html>
